@@ -1,0 +1,19 @@
+{
+  "name": "chat-app",
+  "version": "0.1.0",
+  "description": "socket.io:n testausta",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Tommi Hyvärinen <hyvarinen.tommi@windowslive.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.8.3",
+    "mongoose-uuid2": "^2.3.0",
+    "socket.io": "^2.3.0",
+    "uuid": "^3.3.3"
+  }
+}
