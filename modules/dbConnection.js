@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+require('dotenv').config()
 mongoose.connect(process.env.DB_ENDPOINT);
 let db = mongoose.connection;
 
@@ -25,7 +26,8 @@ module.exports = {
         conversation.customer.name = cust.name;
         conversation.custServ.id = cs.id;
         conversation.custServ.name = cs.name;
-
+        console.log("createConversation conversation");
+        console.log(conversation);
         conversation.save((err) => {
             if (err) {
                 console.log(err);
